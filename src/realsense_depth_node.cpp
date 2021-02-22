@@ -5,7 +5,7 @@
 void msgCallback(const sensor_msgs::Image::ConstPtr& msg) {
     cv_bridge::CvImagePtr Dest = cv_bridge::toCvCopy(msg);
 
-    ROS_INFO("Value: %f", Dest->image.at<double>(msg->width/2, msg->height/2)); 
+    ROS_INFO("Value: %d", Dest->image.at<uchar>(msg->width/2, msg->height/2)); 
 }
 
 
