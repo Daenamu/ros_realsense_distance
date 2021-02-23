@@ -5,5 +5,5 @@ Measure distance with D435 with ROS
 
     rosrun realsense_depth realsense_depth_node
     
-this will subscribe "camera/depth/image_rect_raw" topic from realsense-ros
+this will publish realsense_depth_msg
 
