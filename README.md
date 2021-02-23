@@ -7,3 +7,8 @@ Measure distance with D435 with ROS
     
 this will publish realsense_depth_msg
 
+# Dependencies
+
+https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md
+
+Please install **Intel® RealSense™ SDK 2.0 package**
