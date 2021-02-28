@@ -131,6 +131,7 @@ int main(int argc, char **argv)
             int height = rs2_get_frame_height(frame, &e);
             check_error(e);
 
+
             // Query the distance from the camera to the object in the center of the image
             float dist_to_center = rs2_depth_frame_get_distance(frame, width / 2, height / 2, &e);
             check_error(e);
@@ -145,7 +146,6 @@ int main(int argc, char **argv)
         }
 
         rs2_release_frame(frames);
-        loop_rate.sleep();
     }
 
     // Stop the pipeline streaming
